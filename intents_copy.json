@@ -1,0 +1,467 @@
+
+{"intents": 
+[
+    {"tag":  "Salutation",
+    "patterns" :  [
+      "bonjour",
+      "bonsoir",
+      "hi", 
+      "Salut",
+      "Slt"
+      ],
+    "response" :  ["Bonjour ! Je suis un agent virtuel.Je peux répondre à des questions sur nos marques (prix),les horaires, les adresses de nos showroom, etc.                                                                Si vous souhaitez parler à un agent humain, dites-le moi.Comment puis-je vous aider aujourd'hui ?"]
+    },
+    {"tag":  "Au revoir",
+    "patterns" :  ["bye",
+      "Au revoir",
+      "À bientot!",
+      "À plus tard",
+      "a plus"],
+    "response" :  ["bonne journée","à plus",
+      "a la prochaine","contactez nous si vous avez besoin de plus d'information", 
+      "À plus tard, merci pour votre visite :-)",
+      "Au revoir, Merci de nous visiter",
+      "Bonne journée",
+      "Au revoir! Revenez bientôt."]
+    },
+    {"tag":  "Remerciment",
+    "patterns" :  [
+      "merci",
+      "thank you",
+      "merci c'est gentil",
+       "Merci beaucoup",
+      "C'est utile"],
+    "response" :  ["Avec plaisir cher client",
+      "Heureux de vous aider!",
+      "À tout moment!",
+      "Avec plaisir" ]
+    },
+    {"tag":  "info_credit",
+    "patterns" :  ["béneficier d'un crédit",
+       "avoir un crédit",
+       "informations sur le crédit",
+       "crédit",
+       "avoir un crédit",
+       "credit"
+      ],
+    "response" :  ["Pour tout information concernant le crédit,avance et frais de dossier nous vous invitons à vous rendre au showroom le plus proche de chez vous pour avoir plus d'information précises?Veuillez nous préciser de quelle ville vous-etes afin qu'on communique les coordonnées de celui-ci"]}
+     ,{
+       "tag":"parfait",
+       "patterns":["parfait","top","excellent","cool"],
+       "response":[":)"]
+     }
+    ,{"tag":  "papiers_nécessaires_pour une demande de credit (fonction libérale)",
+        "patterns" :  ["papiers nécessaires pour un crédit",
+          "une demande de crédit",
+          "papiers a fournir pour avoir un crédit"],
+        "response" :  ["voici les papiers necessaires pour une demande de crédit si vous excercez une fonction libérale: *Registre de commerce*Patente *3 derniers relevés bancaires *copie CIN *Spécimen de chèque *Quittance d'eau / électricité ou tel"]}
+       
+       
+    ,{"tag": "horaires_showrooms",
+      "patterns" :  ["quelles sont vos horaires de travail",
+        "horaires du travail",
+        "horaires d'ouverture",
+        "vous horaires svp",
+        "Quand êtes-vous fermé",
+        "Quand es-tu fermé",
+        "Quand êtes-vous ouvert",
+       "Horaires du showroom",
+        "Horaires d'ouverture quotidiennes",
+        "horaires"],
+       "response" :  ["Voici nos horaires: de 8h30 à 13h et de 14h à 18h15 en semaine, et le samedi de 9h à 17h."]
+    }        
+            
+   ,{"tag":  "horaires_ramadan",
+     "patterns" :  ["quelles vos horaires pour le mois du ramadan",
+      "horaires du travail pour ramadan",
+      "horaires de ramadan",
+      "horaires pendant ramadan",
+      "ramadan",
+      "quelles sont vos horaires pour le mois de ramadan"],
+     "response" :  ["Voici nos horaires pendant ramadan : de 09h00 à 15h30 avec une permanence commerciale jusqu'à 17h00 "]}
+                
+     ,{"tag":  "Probleme technique",
+     "patterns" :  ["un problème sur ma véhicule",
+      "probleme technique",
+      "rencontrer quelques problèmes sur ma véhicule",
+      "un problème au niveau de ma voiture",
+      "problème technique","probleme technique"],
+     "response" :  ["Ce problème peut avoir plusieurs causes probables. Nous vous suggérons de prendre rdv chez votre concessionnaire le plus proche pour effectuer un contrôle gratuit de votre KIA"]}
+                            
+     ,
+    
+    {
+      "tag": "Showroom_fes",
+      "patterns": ["Ou se trouve showroom fes ?", 
+        "Votre adresse sur fes","showroom fes",
+        "trouver votre showroom sur fes",
+        "je suis de fes, pouvez vous me donnez votre adresse",
+        "c'est l'adresse de votre showroom sur fes",
+        "Fin ja 3afak chowroom fes ?", 
+        "Fin ja 3afak showroom fes ? ", 
+        "Fin kain 3afak showroom f fes ?",
+         "Adresse fes svp", 
+         "Fin 3ndkom showroom f fes?",
+        "adresse showroom fes"],
+      "response": ["Notre Showroom sur fes se trouve sur la route meknes près de station Ziz."]
+    },
+    
+   
+    {
+      "tag": "Showroom_Errachidia",
+      "patterns": ["Ou se trouve showroom Errachidia ?",
+        "Votre adresse sur Errachidia",
+        "l'adresse du showroom sur Errachidia",
+        "Fin ja 3afak chowroom Errachidia ?",
+        "Fin ja 3afak showroom Errachidia ?",
+        "Fin kain 3afak showroom f Errachidia ?",
+        "Adresse dialkom f Errachidia",
+        "Fin 3ndkom showroom f errachidia?",
+        "showroom errachidia"],
+      "response": ["Notre Showroom sur Errachidia se trouve sur la route nationale 10 - Zone touristique, route de Ouarzazate."]
+    },
+    
+    {
+      "tag": "Showroom_Tanger",
+      "patterns": ["Ou se trouve showroom Tanger ?",
+        "Votre adresse sur Tanger",
+        "merci de me comuniquer l'adresse du showroom tanger",
+        "Fin ja 3afak chowroom Tanger ?",
+        "Fin ja 3afak showroom Tanger ?",
+        "Fin kain 3afak showroom f Tanger ?"
+        ,"Adresse dialkom f Tanger",
+        "showroom tanger",
+        "Fin 3ndkom showroom f tanger?"],
+      "response": ["Notre Showroom sur Tanger se trouve à Ilot 110, Lot 2, Tanger free Zone, Gzenaya."]
+    },
+   
+    {
+      "tag": "Showroom_Kech",
+      "patterns": ["Ou se trouve showroom Marrakech?",
+        "showroom marrakech",
+        "Votre adresse sur marrakech",
+        "Fin ja 3afak chowroom Marrakech?", 
+        "Fin kain showroom Marrakech?",
+        "Fin ja 3afak chowroom marrakech?",
+        "Fin ja 3afak showroom marrakech?",
+        "Fin ja 3afak chowroom kech?",
+        "Fin ja 3afak showroom kech?",
+        "Fin kayn showroom f kech ?",
+        "Fin kayn showroom f marrakech?",
+        "Adresse dialkom f marrakech svp",
+        "Fin 3ndkom showroom f marrakech?",
+        "Fin 3ndkom showroom f kech?"],
+      "response": ["Vous trouverez notre showroom sur Marrakech est sur la route de Casablanca, pour plus d'informations contacter nous sur: 06187687612"]
+    },
+    
+    {
+      "tag": "Showroom_Meknes",
+      "patterns": ["Ou se trouve showroom Meknes?"
+        ,"showroom mekness",
+         "Votre adresse sur meknes",
+         "Fin ja 3afak chowroom Meknes?",
+          "Fin ja 3afak showroom Meknes?",
+          "Fin ja 3afak chowroom meknes?",
+          "Fin ja 3afak showroom meknes?",
+          "Fin kayn showroom f meknes",
+          "Adresse dialkom f meknes svp",
+          "Fin 3ndkom showroom f meknes?"],
+      "response": ["Notre showroom à Mekness se trouve sur Boulevard Moulay Youssef - Immeuble Azha ; pour plus d'informations contacter nous sur: 06187687612"]
+    },
+     
+    {
+      "tag": "Showroom_Nador",
+      "patterns": ["Fin ja 3afak showroom nador?", 
+                   "3afak wakha t3tini l'adresse dial showroom li kayn f nador", 
+                   "Fin kayn showroom f nador",
+                   "Adresse dialkom f nador svp",
+                   "Fin 3ndkom showroom f nador",
+                   "Ou se trouve showroom nador", 
+                   "l'adresse de votre showroom à nador",
+                   "Votre adresse sur Nador"],
+      "response": ["Voici les coordonnées de notre showroom de Nador : Adresse :  Route de Taouima 40 à 45 -"]
+    },
+    {
+      "tag": "Showroom_Khmésset",
+      "patterns": ["Fin ja 3afak chowroom Khmésset?", "Fin kayn showroom f khmesset", "3afak wakha t3tini l'adresse dial showroom li kayn f khmissat", "3afak wakha t3tini l'adresse dial showroom li kayn f khmesset", "Fin ja 3afak showroom Khmésset?","Adresse dialkom f Khmésset svp","Fin ja 3afak chowroom Khmissat?", "Fin kayn showroom f khmissat","Fin ja 3afak showroom Khmissat?","Adresse dialkom f Khmissat svp", "Fin 3ndkom showroom f khmissat?", "Fin 3ndkom showroom f khmésset?",
+ "l'adresse de votre showroom à khmésset", "l'adresse de votre showroom à Khmésset", "l'adresse de votre showroom à khmissat","trouver showroom Khmésset?","Votre adresse sur Khmésset"],
+      "response": ["Voici les coordonnées de notre showroom de Khémisset  : - Adresse : 181 avenue Mohammed V -"]
+    },
+    {
+      "tag": "Showroom_Oujda",
+      "patterns": ["Fin ja 3afak chowroom Oujda?", "Fin ja 3afak showroom Oujda?", "3afak wakha t3tini l'adresse dial showroom li kayn f oujda", "Fin kayn showroom f oujda?","Adresse dialkom f Oujda", "Fin 3ndkom showroom f oujda?",
+"Ou se trouve showroom Oujda?",
+ "l'adresse de votre showroom à oujda", 
+"Ou se trouve showroom Oujda?", 
+"Je veux savoir l'adresse de votre showroom à Oujda",
+ "Votre adresse sur Oujda"],
+      "response": ["Voici les coordonnées de notre showroom de Oujda : 153 Bd Mohamed Derfoufi"]
+    },
+    {
+      "tag": "Showroom_Kenitra",
+      "patterns": ["Fin ja 3afak chowroom knitra?", "Fin ja 3afak showroom kenitra?", "3afak wakha t3tini l'adresse dial showroom li kayn f knitra", "3afak wakha t3tini l'adresse dial showroom li kayn f kenitra", "Fin kayn showroom f knitra", "fin kayn showroom f kenitra","Adresse dialkom f kenitra","Fin ja 3afak chowroom kénitra?", "Fin ja 3afak showroom kénitra?","Adresse dialkom f kénitra", "Fin 3ndkom showroom f knitra?", "Fin 3ndkom showroom f Kénitra?",
+"showroom kénitra?", "l'adresse de votre showroom à kénitra", "l'adresse de votre showroom à knitra", "l'adresse de votre showroom à Kenitra", "l'adresse de votre showroom à kénitra", "l'adresse de votre showroom à kenitra", "adresse sur Kénitra"],
+      "response": ["Voici les coordonnées de notre showroom de Kénitra : Adresse : Lotissement Al Wahda, lot 1 magasin 1, résidence coopérative AL Wahda"]
+    },
+    {
+      "tag": "Showroom_Safi",
+      "patterns": ["Fin ja 3afak chowroom Safi?", "Fin ja 3afak showroom safi?", "3afak wakha t3tini l'adresse dial showroom li kayn f asfi", "3afak wakha t3tini l'adresse dial showroom li kayn f safi", "Adresse dialkom f safi", "Fin kayn showromm f safi?","Fin ja 3afak chowroom asfi?", "Fin ja 3afak showroom asfi?", "Fin kayn showroom f asfi?","Adresse dialkom f asfi", "Fin 3ndkom showroom f safi?", "Fin 3ndkom showroom f asfi?",
+"trouver showroom Safi?", "l'adresse de votre showroom à asfi", "l'adresse de votre showroom à safi", "l'adresse de votre showroom à safi","Votre adresse sur Safi"],
+      "response": ["Voici les coordonnées de notre showroom de Safi : Adresse : 218 bis, avenue Chahid Abdel Ali Ben Chakroune"]
+    },
+    
+    {
+      "tag": "Showroom_Eljadida",
+      "patterns": ["Fin ja 3afak chowroom EL jadida?", "Fin ja 3afak showroom El jadida?","Adresse dialkom f El jadida", "3afak wakha t3tini l'adresse dial showroom li kayn f el jadida", "3afak wakha t3tini l'adresse dial showroom li kayn f jdida", "Fin ja 3afak chowroom jdida?", "Fin kayn showroom f jdida", "Fin ja 3afak showroom jdida?","Adresse dialkom f jdida", "Fin 3ndkom showroom f jdida?",
+"Ou se trouve chowroom El jadida?", "Donnez moi l'adresse de votre showroom à el jadida", "Donnez moi l'adresse de votre showroom à jdida", "l'adresse de votre showroom à El jadida", "l'adresse de votre showroom à jdida", "l'adresse de votre showroom à ljadida", "trouver showroom El jadida?", "Votre adresse sur El jadida"],
+      "response": ["Voici les coordonnées de notre showroom de El jadida : Adresse : 346 Zone Industrielle"]
+    },
+    
+    {
+      "tag": "Showroom_Agadir",
+      "patterns": ["Fin ja 3afak chowroom f Agadir?", "Fin ja 3afak showroom Agadir?", "3afak wakha t3tini l'adresse dial showroom li kayn f agadir", "Fin kayn showroom f agadir", "Adresse dialkom f Agadir", "Fin 3ndkom showroom f agadir?",
+ "trouve chowroom Agadir?", "l'adresse de votre showroom à agadir", "Ou se trouve showroom Agadir?", "l'adresse de votre showroom à agadir", "Votre adresse sur Agadir"],
+      "response": ["Voici les coordonnées de notre showroom de Agadir: Adresse : 14, bis Lotissement Bab Al Madina - Tilila -"]
+    },
+    {
+      "tag": "Showroom_Tetouan",
+      "patterns": ["Fin ja 3afak chowroom f Tetouan?", "Fin ja 3afak showroom tetouan?", "3afak wakha t3tini l'adresse dial showroom li kayn f tetouan", "Fin kayn showroom f tetouan", "Adresse dialkom f Tetouan", "Fin 3ndkom showroom f tetouan?",
+"trouver showroom Tétouan?", "l'adresse de votre showroom à tétouan", "l'adresse de votre showroom à tetouan", "Ou se trouve showroom tétouan?", "l'adresse de votre showroom à tetouan", "Votre adresse sur Tétouan"],
+      "response": ["Voici les coordonnées de notre showroom de Tétouan : Adresse : avenue du 9 avril, voies de contournement"]
+    },
+    {
+      "tag": "Showroom_Casablanca",
+      "patterns": ["Fin ja 3afak chowroom f Casa?", "Fin ja 3afak showroom casa", "3afak wakha t3tini l'adresse dial showroom li kayn f casa", "3afak wakha t3tini l'adresse dial showroom li kayn f casablanca", "Adresse dialkom f casa", "Fin kayn showroom f casa", "Fin ja 3afak chowroom f Casablanca?", "Fin kayn showroom f casablanca", "Fin 3ndkom showroom f casa","Fin ja 3afak showroom casablanca","Adresse dialkom f casablanca",
+"trouver showroom Casablanca?", "l'adresse de votre showroom à casa", "l'adresse de votre showroom à casa", "showroom Casablanca?","Votre adresse sur Casa", "Je veux savoir l'adresse de votre showroom à casablanca", "Votre adresse sur Casablanca"],
+      "response": ["Nous avons 3 showrooms à Casablanca. Voici les coordonnées : - Adresse 1 : 190, boulevard Moulay Ismail - 64   --- Adresse 2:  N°62, Intersection Route des facultés(ex Route d'Eljadida) --- Adresse 3:   Abderrahim Bouabid -Casablanca"]
+    },
+    {
+      "tag": "Showroom_Rabat",
+      "patterns": ["Fin ja 3afak chowroom f Rabat?", "Fin ja 3afak showroom Rabat?", "3afak wakha t3tini l'adresse dial showroom li kayn f rabat", "Fin kayn showroom f rabat", "Adresse dialkom f Rabat", "Fin 3ndkom showroom f rabat?",
+"showroom Rabat?", "l'adresse de votre showroom à rabat", "trouver showroom Rabat?", "l'adresse de votre showroom à rabat", "Votre adresse sur Rabat"],
+      "response": ["Voici les coordonnées de notre showroom de Rabat: Adresse : Avenue Hassan II, Lot Vita, N°3, Z.I, Route de Casablanca"]
+    },
+    {
+      "tag": "Showroom_Sale",
+      "patterns": [ "Fin ja 3afak showroom f sala?", "Fin ja 3afak showroom Salé?", "Fin ja 3afak showroom f Sala?", "3afak wakha t3tini l'adresse dial showroom li kayn f salé", "Fin kayn showroom f salé", "Adresse dialkom f Salé", "Fin 3ndkom showroom f salé?",
+"showroom Salé?", "trouver showroom Salé?", "l'adresse de votre showroom à salé" , "l'adresse de votre showroom à sala", "Ou se trouve showroom salé?", "Je veux savoir l'adresse de votre showroom à salé", "Votre adresse sur Salé"],
+      "response": ["Voici les coordonnées de notre showroom de Salé: Adresse : Lot N 17 Zone Industrielle Des Habous، Route de Rabat"]
+    },
+    {
+      "tag": "rechange_fr",
+      "patterns": ["changer ma voiture, c'est obligé KIA ?",
+        "rechange de voiture",
+        "c'est obligé KIA, ou bien n'importe qu'elle marque ?"],
+      "response": ["Non", "N'importe qu'elle marque", "Peut importe la marque que vous avez"]
+    },
+    
+    {
+      "tag": "vente_fr",
+      "patterns": ["Pour acheter une voiture ?",
+                   "Pour acheter une voiture, qu'est ce que je dois faire ?",
+                   "acheter une KIA",
+                   "une voiture de chez vos",
+                   "interessé par l'achat d'une voiture "],
+      "response": ["Merci de visiter le showrom le plus proche de vous pour avoir plus d'informations. Ou bien vous pouvez également retrouver un vrai conseil personnalisé en mode chat ou Live vidéo sans bouger de chez vous ou que vous soyez Passez une agréable journée https://kia-maroc.com/vibe"]
+    },
+ {
+      "tag": "Organisme_credit_fr",
+      "patterns": ["S'il vous plait je veux savoir les formules de crédit?","quelles sont les formules de crédit","les formules de crédit"],
+      "response": ["Nous proposons des formules de crédits très intéressantes et pour tous les budgets à travers nos partenariats avec différents organismes de financement. Nous vous invitons à visiter le showroom le plus proche, nos conseillers commerciaux sont à votre disposition pour vous donner tous les détails. Merci"]
+    },
+    {
+      "tag": "picanto_prix",
+      "patterns": ["le prix Picanto?",
+                   "Picanto combien",
+                   "quel est le prix de kia picanto?",
+                   "combien vaut le KIA Picanto",
+                   "le kia picanto c'est a partir de combien?",
+                   "le prix de Picanto est a combien ?",
+                   "est-ce que je peux savoir le prix de Picanto",
+                   "merci de me communiquer le prix de Picanto",
+                   "Bch7al dayra picanto ?",
+                   "Picanto bch7al",
+                   "bch7al taman dia Picanto"],
+      "response": ["Kia Picanto est à 114 900.00 DH,Pour chaque version  -*- Motion BVM: 119 900.00 DH   -*- Motion + BVM: 127 900.00 DH  -*- Motion BVA: 134 900.00 DH  -*- Motion + BVA: 142 900.00 DH  -*- Active: 149 900.00 DH -*- Lifestyle BVM: 114 900.00 DH.   Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    {"tag": "ceed_prix",
+      "patterns": ["Ceed le prix ?",
+                  "je veux savoir c'est a combien Ceed",
+                   "Ceed combien","le prix de Ceed est a combien ?",
+                   "est-ce que je peux savoir le prix de Ceed",
+                   "merci de me communiquer le prix de Ceed",
+                   "quel est le prix de kia Ceed ?",
+                   "combien vaut le KIA Ceed",
+                   "la kia Ceed c'est a partir de combien?",
+                   "Bch7al dayra Ceed ?","Bch7al dayra Kia Ceed?","bch7al taman dia Ceed", "Ceed bch7al ?"],
+      "response": ["KIA Ceed est à partir de 205 000.00 DH. Plus d'infos:  -*- Motion BVM: 205 000.00 DH  -*- Motion+BVM: 213 000.00 Dh  -*- Active BVM: 230 000.00 DH  -*- Active BVA: 265 000.00 DH  -*- GT Line BVM 265 000.00 DH   -*- GT Line BVA 305 000.00 DH.     Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    {
+      "tag": "Sportage_prix",
+      "patterns": ["Le prix dial Sportage ?",
+         "Sportage combien ?",
+         "le prix de Kia Sportage svp",
+         "Sportage le prix ?",
+         "Sportage",
+         "la nouvelle KIA sportage",
+         "Bch7al dayra Sportage ?",
+         "Bch7al dayra Kia Sportage?",
+         "bch7al taman dia Sportage",
+         "Sportage bch7al ?",
+        "bchhal sportage",
+      "bch7al dayra sportage"],
+      "response": ["Oui Kia Sportage est disponible à partir de 271 000.00 DH. Plus d'infos:  -*- Motion BVM: 271 000.00 DH  -*- Motion+BVM: 279 000.00 Dh  -*- Active BVM: 295 000.00 DH    -*- Motion BVA 4x2: 295 000.00 DH    -*- Motion+BVA 4x2: 303 000.00 DH    -*- Active BVA 4x2: 335 000.00 DH    -*- Executive BVA 4x8: 519 000.00.    Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    {
+      "tag": "Sorento_prix",
+      "patterns": ["Le prix dial Sorento ?",
+         "Sorento combien ?",
+         "le prix de Kia Sorento svp",
+         "Sorento le prix ?",
+         "kia Sorento",
+         "Je suis intéréssé par la nouvelle KIA sorento est il possible d'avoir quelques informations",
+         "Bch7al dayra Sorento ?",
+         "Bch7al dayra Kia Sorento?",
+         "bch7al taman dia Sorento",
+         "Sorento bch7al ?"],
+      "response": ["Sorento est disponible à partir de 329 900.00 DH sur nos showrooms. Plus d'infos:  -*- Business BVM: 329 900.00 DH  -*- Business BVA 4x4: 369 900.00 Dh  -*- Active BVA 4x2: 432 000.00 DH    -*- GT Line BVA 4x4: 519 000.00 DH.     Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    {
+      "tag": "ProCeed_prix",
+      "patterns": ["Le prix dial ProCeed ?", 
+        "ProCeed combien ?",
+        "le prix de Kia ProCeed svp",
+        "informations sur kia proceed",
+        "ProCeed le prix ?",
+        "Le prix Pro Ceed ?",
+        "Pro Ceed combien ?",
+        "le prix de Kia Pro Ceed svp",
+        "Pro Ceed le prix ?",
+        "kia proceed",
+        "proceed",
+        "sur kia pro ceed",
+        "sur pro ceed",
+        "nouvelle KIA proceed",
+        "Bch7al dayra ProCeed ?", 
+        "Bch7al dayra Kia ProCeed?",
+        "bch7al taman dia ProCeed",
+        "ProCeed bch7al ?",
+        "Bch7al dayra Pro Ceed ?",
+        "Bch7al dayra Kia Pro Ceed?",
+        "bch7al taman dia Pro Ceed",
+        "Pro Ceed bch7al ?",
+      "bchhal Ceed pro"],
+      "response": ["Oui Pro Ceed GT Line BVA: 335 000.00 DH. Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    {
+      "tag": "rio_prix",
+      "patterns": ["Le prix Rio ?",
+        "Rio combien",
+         "le prix de Kia Rio svp",
+         "Rio le prix ?",
+         "sur kia Rio",
+         "informations sur kia rio",
+         "sur Rio",
+         "la nouvelle KIA rio ",
+        "Bch7al dayra Rio ?", 
+        "bch7al taman dia Rio",
+         "Rio bch7al ?"],
+      "response": ["Kia Rio est disponible est à partir de 149 900.00 DH. Plus d'infos:  -*- Motion BVM: 149 900.00 DH   -*- Motion+BVM: 157 900.00 Dh   -*- Lifestyle BVM: 136 900.00 DH   -*- Active BVM: 165 900.00 DH  -*- Active BVA: 179 000.00 DH.     Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    {
+      "tag": "Cerato_prix",
+      "patterns": ["Le prix dial Cerato ?", 
+        "Cerato combien ?", 
+        "le prix de Kia Cerato svp", 
+        "informations sur kia cerato",
+         "Cerato le prix ?", 
+         " kia cerato", 
+         "sur cerato", 
+         "la nouvelle KIA cerato ",
+         "Bch7al dayra Cerato ?",
+         "Bch7al dayra Kia Cerato ?",
+         "bch7al taman dia Cerato",
+         "Cerato bch7al ?"],
+      "response": ["Cerato est à partir de 225 000.00 DH. Plus d'infos:  -*- Motion BVM: 225 000.00 DH   -*- Motion+BVM: 233 000.00 Dh  -*- Active : 255 000.00 DH  -*- Active BVA: 275 000.00 DH.    Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    
+    {
+      "tag": "S_clientele",
+      "patterns": ["Num dial service clientèle svp",
+        "3afak bghit nemra dial service clientèle",
+        "Pour contacter le Service clientèle?",
+        "Le numéro du Service clientèle ?",
+       "le numéro de votre service de clientèle",
+       "le numero du service clientèle"],
+      "response": ["Voici le numéro pour contacter notre Service clientèle :  0802 04 04 04"]
+    },
+  
+    {
+      "tag": "occasion_automa",
+      "patterns": ["Est-ce que vous vendez les voitures occasion boite à vitesse Automatique?"],
+      "response": ["Oui"]
+    },
+      {
+       "tag":"Promo_f_a_fr",
+      "patterns": ["Promo fin d'année", "promotion de fin d'année", "la promo de fin d'année"],
+      "response": ["Pous notre promotion de fin d'année,Nous avons actuellement:  l'optima à 3737dh par mois pendant 71 mois sans avance sans frais de dossier et sans intérêt, le Sorento à 4949 dh par mois pendant 71 mois sans avance sans frais de dossier et sans intérêt,  ainsi la Rio à 850 dhs par mois pendant 83 mois avec une avance de 75.888 dh"]
+    },
+  
+    {
+      "tag": "Promo_digitale_fr",
+      "patterns": ["Promo digitale", "a promo digitale", "informations sur la promotion digitale","la promotion digitale"],
+      "response": ["Nous avons actuellement: l'optima à 1377dh par mois avec une avance de 50% le Sorento à 1916 dh par mois avec une avance de 50% ainsi la Rio à 850 dhs par mois avec une avance de 50%"]
+    },
+    
+    {
+      "tag": "Offre_salon_fr",
+      "patterns": ["Offre salon", "informations sur l'offre salon", "informations sur l'offre salon","L'offre salon est terminé ou pas encore ?"],
+      "response": ["Nous avons prolongé l'Offre Salon jusqu'au le 31 Mai 2018, nous vous prions de nous communiquer votre numéro de téléphone, afin que notre conseiller commercial prendra attache avec vous dans les plus brefs délais."]
+    },
+   
+    {
+      "tag": "Commercial_cont_fr",
+      "patterns": ["Service commercial", "Jle contact du service commercial"],
+      "response": ["Prière de contacter le service commercial à Casablanca : Ain sebaa Mly Ismail sur le 05-22-24-06-64 / 0522417840.  *) Route d'eljadida sur le 05-22-98-16-81"]
+    },
+    
+    {
+      "tag": "Recrutement_fr",
+      "patterns": ["Pour une candidature", "pour une candidature pouvez vous m'envoyer votre adresse mail svp?","mail de condidature"],
+      "response": ["Merci d'envoyez vos candidatures sur: recrutement.kia-maroc@gbh.fr"]
+    },
+    {
+      "tag": "rechange",
+      "patterns": ["Darori tkon KIA ?",
+                   "Bghit nbdel tonobilti wach darori tkon KIA ?"],
+      "response": ["Non. Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous.", "La, n'importe qu'elle marque. Pour avoir plus d'informations précises, nous vous invitons à vous rendre au showroom le plus proche de chez vous."]
+    },
+    {
+      "tag": "adresse_showroom",
+      "patterns": ["Fin ja 3afak showroom", 
+        "3afak wakha t3tini l'adresse dial showroom", 
+        "Fin kayn showroom",
+        "Adresse dialkom",
+        "Fin 3ndkom showroom",
+        "Ou se trouve showroom", 
+        "l'adresse de votre showroom",
+        "Votre adresse"],
+      "response": ["Notre showroom se trouve dans differentes villes du maroc, merci de m'indiquer la ville"]
+     
+    },
+    {
+      "tag": "Prix",
+      "patterns": ["Price", 
+        "3afak bchhal taman", 
+        "bghit n3rf le prix",
+        "prix",
+        "taman",
+        "a combien"],
+      "response": ["Nous avons différentes marque avec differtentes version, merci de m'indiquer quel marque vous interesse :)"]
+     
+    }
+    
+    
+       
+  ]
+}

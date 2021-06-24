@@ -1,0 +1,255 @@
+
+{"intents": 
+[
+    {"tag":  "Salutation",
+    "patterns" :  ["salut","Bonjour"],
+    "response" :  ["Bonjour,comment puisse-je vous aider"]
+    },
+    {"tag":  "Au revoir",
+    "patterns" :  ["bye","Au revoir"],
+    "response" :  ["bonne journée","à plus","a la prochaine","contactez nous si vous avez besoin de plus d'information"]
+    },
+    {"tag":  "Remerciment",
+    "patterns" :  ["merci","thank you","merci c'est gentil"],
+    "response" :  ["Avec plaisir cher client"]
+    },
+    {"tag":  "info_credit",
+    "patterns" :  ["crédit"],
+    "response" :  ["pour tout information concernant le crédit ,avance et frais de dossier nous vous invitons à vous rendre au showroom le plus proche de chez vous pour avoir plus d'information précises?Veuillez nous préciser de quelle ville vous-etes afin qu'on communique les coordonnées de celui-ci"]}
+
+    ,{"tag":  "papiers_nécessaires_pour une demande de credit (fonction libérale)",
+        "patterns" :  ["comment je peux benificier d'un crédit","je veux des informations sur les papiers nécessaires pour un crédit","une demande de crédit","quelles son les papiers nécessaires pour un crédit"],
+        "response" :  ["voici les papiers necessaires pour une demande de crédit si vous excercez une fonction libérale: *Registre de commerce*Patente *3 derniers relevés bancaires *copie CIN *Spécimen de chèque *Quittance d'eau / électricité ou tel"]}
+       
+       
+    ,{"tag": "horaires_showrooms",
+      "patterns" :  ["horaires"],
+       "response" :  ["voici nos horaires: de 8h30 à 13h et de 14h à 18h15 en semaine, et le samedi de 9h à 17h."]
+    }        
+            
+   ,{"tag":  "horaires_ramadan",
+     "patterns" :  ["quelles vos horaires pour le mois du ramadan"],
+     "response" :  ["Bonjour, voici nos horaires pendant ramadan : de 09h00 à 15h30 avec une permanence commerciale jusqu'à 17h00 "]}
+                
+     ,{"tag":  "Probleme technique",
+     "patterns" :  ["Problème"],
+     "response" :  ["Bonjour, ce problème peut avoir plusieurs causes probables. Nous vous suggérons de prendre rdv chez votre concessionnaire le plus proche pour effectuer un contrôle gratuit de votre KIA"]}
+                            
+     ,{
+      "tag": "fine",
+      "patterns": [
+        "Bye",
+        "Au revoir",
+        "À bientot!",
+        "À plus tard"
+      ],
+      "response": [
+        "À plus tard, merci pour votre visite :-)",
+        "Au revoir, Merci de nous visiter",
+        "Bonne journée",
+        "Au revoir! Revenez bientôt."
+      ]
+    },
+    {
+      "tag": "fine_arabe",
+      "patterns": [
+        "Bsslama",
+        "Chokran, besslama"
+      ],
+      "response": [
+        "KIA katchekrkom besslama :-)",
+        "Ma3a salama KIA katchekrkoum",
+        "Nharkom mbrouk"
+      ]
+    },
+    {
+      "tag": "merci",
+      "patterns": [
+        "Merci",
+        "Merci beaucoup",
+        "C'est utile"
+      ],
+      "response": [
+        "Heureux de vous aider!",
+        "À tout moment!",
+        "Avec plaisir" 
+      ]
+    },
+    {
+      "tag": "merci_arabe",
+      "patterns": [
+        "Chokran",
+        "Chkran bzzzf",
+        "Chokran jazilan"
+      ],
+      "response": [
+        "Chokran likom",
+        "Merhba bikom f ay wa9et",
+        "بكل سرور",
+        "Bikoli soror" 
+      ]
+    },
+    {
+      "tag": "éléments",
+      "patterns": [
+        "Qu'elles sont les marques que vous avez ?",
+        "Quels types d'articles existe-t-il?",
+        "Que vendez-vous?",
+        "je veux savoir les marques disponibles chez vous"
+      ],
+      "response": [
+        "Nous vendons des voitures KIA telles que: KIA-Picanto, Kia Sportage ....",
+        "Nous avons plusieurs marques telles que: KIA-Picanto, Kia Sportage ...."
+      ]
+    },
+    {
+      "tag": "éléments_arabe",
+      "patterns": [
+        "Chno homa l2anwa3 dial tonobilat li 3ndkom ?",
+        "Chno katbi3o ?",
+        "bghit n3ref les marques li 3ndkom"
+      ],
+      "response": [
+        "Kanbi3o tonobilat Kia kayna: KIA-Picanto, Kia Sportage, Kia Ceed ...."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "Vous acceptez les cartes credits?",
+        "Acceptez-vous Mastercard?",
+        "est ce que je peux payer en espèces",
+        "quelles sont les cartes que vous acceptez",
+        "Êtes-vous uniquement en espèces?"
+      ],
+      "response": [
+        "Oui,Nous acceptons VISA et Mastercard",
+        "Oui,Nous acceptons la plupart des principales cartes de crédit"
+      ]
+    },
+    {
+      "tag": "livraison",
+      "patterns": [
+        "Combien de temps prend la livraison?",
+        "Quand vais-je recevoir ma livraison?",
+        "la livraison ca prend combien de jour"
+      ],
+      "response": [
+        "La livraison prend 2-4 jours"
+      ]
+    },
+    {
+      "tag": "Showroom_fes",
+      "patterns": ["Fin ja 3afak chowroom fes ?", "Adresse fes svp"],
+      "response": ["Showroom ja f tri9 meknes 7da station Ziz."]
+    },
+    {
+      "tag": "Showroom_fes_fr",
+      "patterns": ["Ou se trouve chowroom fes ?", "Votre adresse sur fes"],
+      "response": ["Le Showroom est sur route meknes près de station Ziz."]
+    },
+    {
+      "tag": "Showroom_fes_vidange",
+      "patterns": ["Salut je me demande si je peux faire le vidange chez maison kia a fes pour ma voiture kia cerato essence2010 merci"],
+      "response": ["Biensur, Merhba bik, merci de visiter le showroom le plus proche de vous"]
+    },
+    {
+      "tag": "Showroom_Errachidia",
+      "patterns": ["Fin ja 3afak chowroom Errachidia ?", "Adresse dialkom f Errachidia"],
+      "response": ["Showroom ja f tri9 lwatania ra9m 10 - zone touristique, tri9 dial Ouarzazate."]
+    },
+    {
+      "tag": "Showroom_Errachidia_fr",
+      "patterns": ["Ou se trouve chowroom Errachidia ?", "Votre adresse sur Errachidia"],
+      "response": ["Le Showroom est sur route nationale 10 - Zone touristique, route de Ouarzazate."]
+    },
+    {
+      "tag": "Showroom_Tanger",
+      "patterns": ["Fin ja 3afak chowroom Tanger ?", "Adresse dialkom f Tanger"],
+      "response": ["Showroom ja f Ilot 110, Lot 2, Tanger free Zone, Gzenaya."]
+    },
+    {
+      "tag": "Showroom_Tanger_fr",
+      "patterns": ["Ou se trouve chowroom Tanger ?", "Votre adresse sur Tanger"],
+      "response": ["Ilot 110, Lot 2, Tanger free Zone, Gzenaya."]
+    },
+    {
+      "tag": "Showroom_Kech",
+      "patterns": ["Fin ja 3afak chowroom Marrakech?","Fin ja 3afak chowroom kech?", "Adresse dialkom f marrakech svp"],
+      "response": ["Kayn ftri9 casa", "Kayn ftri9 Casablanca"]
+    },
+    {
+      "tag": "Showroom_Kech_fr",
+      "patterns": ["Ou se trouve chowroom Marrakech?", "Votre adresse sur fes"],
+      "response": ["Nous sommes sur la route de Casablanca"]
+    },
+    {
+      "tag": "Showroom_Meknes",
+      "patterns": ["Fin ja 3afak chowroom Meknes?", "Adresse dialkom f meknes svp"],
+      "response": ["Marhba, boulevard Moulay Youssef - Immeuble Azha"]
+    },
+    {
+      "tag": "Showroom_Meknes_fr",
+      "patterns": ["Ou se trouve chowroom Meknes?", "Votre adresse sur meknes"],
+      "response": ["Notre showroom à Mekness se trouve sur Boulevard Moulay Youssef - Immeuble Azha"]
+    },
+    {
+      "tag": "rechange",
+      "patterns": ["Darori tkon KIA ?",
+                   "Bghit nbdel tonobilti wach darori tkon KIA ?"],
+      "response": ["Non", "La"]
+    },
+    {
+      "tag": "rechange_fr",
+      "patterns": ["Je veux changer ma voiture, c'est obligé KIA ?",
+                   "c'est obligé KIA, ou bien n'importe qu'elle marque ?"],
+      "response": ["Non", "N'importe qu'elle marque", "Peut importe la marque que vous avez"]
+    },
+    {
+      "tag": "vente",
+      "patterns": ["Li bgha ychri mn 3ndkom ?",
+                   "Li bgha ychri mn3ndkoum chno lmtloub ?"],
+      "response": ["Merhba bik 3ndna f showroom bash t3ref ma3loumat aktar. Wla zoro lmaw9i3 https://kia-maroc.com/vibe"]
+    },
+    {
+      "tag": "vente_fr",
+      "patterns": ["Pour acheter une voiture ?",
+                   "Pour acheter une voiture, qu'est ce que je dois faire ?"],
+      "response": ["Merci de visiter le showrom le plus proche de vous pour avoir plus d'informations. Ou bien vous pouvez également retrouver un vrai conseil personnalisé en mode chat ou Live vidéo sans bouger de chez vous ou que vous soyez Passez une agréable journée https://kia-maroc.com/vibe"]
+    },
+    {
+      "tag": "picanto_prix",
+      "patterns": ["Picanto le prix ?",
+                   "Picanto combien"],
+      "response": ["Kia Picanto est à 114 900.00 DH"]
+    },
+    {
+      "tag": "picanto_prix_ar",
+      "patterns": ["Bch7al dayra picanto ?",
+                   "Picanto bch7al"],
+      "response": ["A partir de 114 900.00 DH"]
+    },
+    {
+      "tag": "ceed_prix",
+      "patterns": ["Ceed le prix ?",
+                   "Ceed combien"],
+      "response": ["A partir de 199 900.00 DH"]
+    },
+    {
+      "tag": "ceed_prix_ar",
+      "patterns": ["Ceed bch7al dayra ?",
+                   "bch7al taman dial Ceed ?"],
+      "response": ["A partir de 199 900.00 DH"]
+    },
+    {
+      "tag": "occasion_automa",
+      "patterns": ["Bonjour, Est-ce que vous vendez les voitures occasion boite à vitesse Automatique?"],
+      "response": ["Oui"]
+    },
+    {
+      "tag": "occasion_automa_arabe",
+      "patterns": ["Wach katbi3o tonobilat occasion boite vitesse automatique"],
+      "response": ["Ah kaynin"]
+    }   
+  ]
+}
